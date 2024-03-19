@@ -1,49 +1,77 @@
 {
-  "json.schemas": [],
-  "terminal.integrated.fontFamily": "'Jetbrains Mono'",
-  "explorer.confirmDelete": false,
-  "terminal.integrated.defaultProfile.windows": "Git Bash",
-  "projectManager.sortList": "Recent",
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "diffEditor.ignoreTrimWhitespace": false,
-  "editor.renderWhitespace": "none",
-  "editor.guides.bracketPairs": "active",
-  "git.autofetch": true,
-  "security.workspace.trust.untrustedFiles": "open",
-  "vim.handleKeys": {
-    "<C-d>": false,
-    "<C-b>": false,
-    "<C-j>": false,
-    "<C-w>": false,
-  },
-  "editor.guides.highlightActiveBracketPair": false,
-  "totalTypeScript.hideAllTips": false,
-  "totalTypeScript.hideBasicTips": true,
-  "[typescript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
-  },
-  "[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features"
-  },
-  "[scss]": {
-    "editor.defaultFormatter": "sibiraj-s.vscode-scss-formatter"
-  },
-  "[python]": {
-    "editor.formatOnType": true
-  },
-  "editor.fontFamily": "'JetBrains Mono'",
-  "editor.fontLigatures": true,
-  "[json]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-  },
-  "settingsSync.ignoredSettings": [],
-  "workbench.statusBar.visible": true,
-  "breadcrumbs.enabled": true,
-  "editor.minimap.enabled": false,
-  "workbench.colorTheme": "Catppuccin Macchiato Bordered",
-  "workbench.settings.applyToAllProfiles": [],
   "workbench.iconTheme": "material-icon-theme",
-  "vsicons.dontShowNewVersionMessage": true,
-  "editor.lineNumbers": "relative"
+  "workbench.fontAliasing": "antialiased",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.find.addExtraSpaceOnTop": false,
+  "workbench.list.smoothScrolling": true,
+  "codeium.enableCodeLens": "hide_x",
+  "terminal.integrated.fontFamily": "'Jetbrains Mono'",
+  "editor.fontFamily": "Input Mono, Fira Code, monospace",
+  "editor.minimap.enabled": false,
+  // VIM keybindings and settings
+  "vim.leader": ",",
+  "vim.handleKeys": {
+      "<C-d>": false,
+      "<C-b>": false,
+      "<C-j>": false,
+      "<C-w>": false,
+      "<C-p>": false,
+  },
+  "vim.normalModeKeyBindingsNonRecursive": [
+      {
+          "before": [
+              "<leader>",
+              "t"
+          ],
+          "commands": [
+              "workbench.action.toggleSidebarVisibility"
+          ]
+      },
+      {
+          "before": [
+              "<leader>",
+              "f"
+          ],
+          "commands": [
+              "revealInExplorer"
+          ],
+      },
+      {
+          "before": [
+              "<leader>",
+              "r",
+              "f"
+          ],
+          "commands": [
+              "fileutils.renameFile"
+          ]
+      },
+      {
+          "before": [
+              "<space>"
+          ],
+          "commands": [
+              "workbench.action.files.save"
+          ]
+      },
+      {
+          "before": [
+              "<leader>",
+              "w"
+          ],
+          "commands": [
+              "workbench.action.splitEditor"
+          ]
+      }
+  ],
+  "workbench.sideBar.location": "right",
+  "editor.lineNumbers": "off",
+  "glassit.alpha": 240,
+  "editor.mouseWheelScrollSensitivity": 2,
+  "workbench.colorTheme": "Dark+ Pure Black (OLED)",
+  "codeium.enableExplainProblem": false,
+  "codeium.enableConfig": {
+      
+      "*": true
+  }
 }
